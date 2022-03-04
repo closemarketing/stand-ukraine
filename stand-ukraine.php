@@ -1,0 +1,44 @@
+<?php
+/**
+ * Plugin Name: Support Ukraine
+ * Plugin URI:  https://close.technology
+ * Description: Shows a flag in the footer to show that you stand with Ukraine.
+ * Version:     1.0
+ * Author:      Closemarketing
+ * Author URI:  http://en.close.marketing
+ * Text Domain: support-ukraine
+ * Domain Path: /languages
+ * License:     GPL-2.0+
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ *
+ * @package     WordPress
+ * @author      Closemarketing
+ * @copyright   2022 Closemarketing
+ * @license     GPL-2.0+
+ *
+ * @wordpress-plugin
+ *
+ * Prefix:      supuk
+ */
+
+defined( 'ABSPATH' ) || die( 'No script kiddies please!' );
+
+add_action( 'plugins_loaded', 'supuk_plugin_init' );
+/**
+ * Load localization files
+ *
+ * @return void
+ */
+function supuk_plugin_init() {
+	load_plugin_textdomain( 'support-ukraine', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+
+add_action( 'wp_footer', 'supuk_show_flag' );
+/**
+ * Shows flag
+ *
+ * @return void
+ */
+function supuk_show_flag() {
+	echo '<div title="' . esc_html__( 'We stand with Ukraine', 'support-ukraine' ) . '" style="position: fixed; left: -80px; bottom: 20px; width: 300px; height: 84px; transform: rotate(45deg); z-index: 999; background: linear-gradient(-180deg, rgb(0, 91, 187) 50%, rgb(255, 213, 0) 50%);"></div>';
+}
