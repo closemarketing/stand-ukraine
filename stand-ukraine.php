@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Support Ukraine
+ * Plugin Name: Stand with Ukraine
  * Plugin URI:  https://close.technology
  * Description: Shows a flag in the footer to show that you stand with Ukraine.
  * Version:     1.0
@@ -30,7 +30,7 @@ add_action( 'plugins_loaded', 'supuk_plugin_init' );
  * @return void
  */
 function supuk_plugin_init() {
-	load_plugin_textdomain( 'support-ukraine', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+	load_plugin_textdomain( 'stand-ukraine', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 
 add_action( 'wp_footer', 'supuk_show_flag' );
@@ -40,5 +40,5 @@ add_action( 'wp_footer', 'supuk_show_flag' );
  * @return void
  */
 function supuk_show_flag() {
-	echo '<div title="' . esc_html__( 'We stand with Ukraine', 'support-ukraine' ) . '" style="position: fixed; left: -80px; bottom: 20px; width: 300px; height: 84px; transform: rotate(45deg); z-index: 999; background: linear-gradient(-180deg, rgb(0, 91, 187) 50%, rgb(255, 213, 0) 50%);"></div>';
+	echo '<div title="' . esc_html__( 'We stand with Ukraine', 'stand-ukraine' ) . '" style="position: fixed; left: -80px; bottom: 20px; width: 300px; height: 84px; transform: rotate(45deg); z-index: 999; background: linear-gradient(-180deg, rgb(0, 91, 187) 50%, rgb(255, 213, 0) 50%);"></div>';
 }

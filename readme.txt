@@ -1,4 +1,4 @@
-=== Stand Ukraine ===
+=== Stand with Ukraine ===
 Contributors: closemarketing, davidperez, sacrajaimez
 Tags: custom-admin
 Donate link: https://www.unicef.org/emergencies/conflict-ukraine-pose-immediate-threat-children
@@ -24,6 +24,9 @@ WordPress installation and then activate the Plugin from Plugins page.
 [Official Repository Github](https://github.com/closemarketing/stand-ukraine)
 
 == Changelog ==
+= 1.1 =
+*   Fix translation.
+
 = 1.0 =
 *   First released.
 
