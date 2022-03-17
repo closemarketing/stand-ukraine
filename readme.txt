@@ -4,8 +4,8 @@ Tags: custom-admin
 Donate link: https://www.unicef.org/emergencies/conflict-ukraine-pose-immediate-threat-children
 Requires at least: 4.0
 Tested up to: 5.9
-Stable tag: 1.0
-Version: 1.0
+Stable tag: 1.2
+Version: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,9 @@ WordPress installation and then activate the Plugin from Plugins page.
 [Official Repository Github](https://github.com/closemarketing/stand-ukraine)
 
 == Changelog ==
+= 1.2 =
+*   Size smaller for Mobile.
+
 = 1.1 =
 *   Fix translation.
 
