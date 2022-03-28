@@ -5,7 +5,7 @@ Donate link: https://www.unicef.org/emergencies/conflict-ukraine-pose-immediate-
 Requires at least: 4.0
 Tested up to: 5.9
 Stable tag: 1.2
-Version: 1.2
+Version: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,10 @@ WordPress installation and then activate the Plugin from Plugins page.
 [Official Repository Github](https://github.com/closemarketing/stand-ukraine)
 
 == Changelog ==
+= 1.2.1 =
+*   Add opacity for a chance to read the content behind the flag.
+*   Load translation option only at the visible front end.
+
 = 1.2 =
 *   Size smaller for Mobile.
 
